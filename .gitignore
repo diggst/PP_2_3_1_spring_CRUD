@@ -1,2 +1,15 @@
 # Project exclude paths
 /target/
+
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/resources/
+/dataSources.local.xml
+
+# Intellij
+.idea/
+*.iml
+*.iws

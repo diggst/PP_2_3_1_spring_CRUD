@@ -28,12 +28,6 @@ public class UserController {
         return "user/index";
     }
 
-    @GetMapping("/{id}")
-    public String show(@PathVariable("id") long id, Model model) {
-        model.addAttribute("person", userService.getUser(id));
-        return "user/show";
-    }
-
     @GetMapping("/new")
     public String createForm(@ModelAttribute("user") User newUser) {
         return "user/new";
